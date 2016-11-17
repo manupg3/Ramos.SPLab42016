@@ -1,0 +1,87 @@
+<!-- <body>
+  <div>
+
+    <div align="center">      
+        <h2> Inicia sesión para acceder</h2>  
+        
+          <label for="correo">Correo</label>
+          <input type="text" name="correo" ng-model="usuario.correo" class="form-control" >
+          
+         <!--  <br><br>
+          <label for="dni">DNI</label>
+          <input type="text" name="dni" ng-model="usuario.dni" class="form-control" >
+          <br><br> -->
+
+
+         <!--  <br><br> -->
+<!-- 
+
+          <label for="clave">Clave</label>
+          <input type="password" name="clave" ng-model="usuario.clave" class="form-control" >
+          <br><br>
+
+          <a class="btn btn-primary" ng-click="iniciarSesion()" >
+            <span>&nbsp;</span>iniciarSesion
+          </a>     
+          
+          <a class="btn btn-primary" ng-click="irARegistro()" >
+            <span>&nbsp;</span>Registrarse
+          </a>     
+
+
+          <input type="hidden" ng-model="logueo">
+
+          
+
+          <div ng-hide="logueo">
+              <h3>Error al loguearse. Verfique usuario y clave.</h3>            
+          </div> -->
+          
+ <!--     </div>
+  </div>
+</body -->
+<body >
+
+  <div class="login-form">
+     <h1>Login</h1>
+     <div class="form-group ">
+       <input type="text" ng-model="usuario.mail" class="form-control" placeholder="Username " id="UserName" required>
+       <i class="fa fa-user"></i>
+     </div>
+       <div class="form-group ">
+       <input type="text" ng-model="usuario.nombre" class="form-control" placeholder="Nombre " id="Nombre" required>
+       <i class="fa fa-user"></i>
+     </div>
+     <div class="form-group log-status">
+       <input type="password" ng-model="usuario.pass" class="form-control" placeholder="Password"  id="Passwod" required>
+       <i class="fa fa-lock"></i>
+     </div>
+      <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <button class="form-control input-sm" ng-click="admin()">ADMIN</button>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <button class="form-control input-sm" ng-click="comprador()">COMPRADOR</button> 
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                      <button class="form-control input-sm" ng-click="vendedor()">VENDEDOR</button> 
+                    </div>
+                  </div>
+
+                </div>
+      <span class="alert">Invalid Credentials</span>
+      <a class="link" href="#">Lost your password?</a>
+     <button type="button" class="log-btn" ng-click="iniciarSesion()">Log in</button>
+     
+    
+   </div>
+
+
+<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+</body>

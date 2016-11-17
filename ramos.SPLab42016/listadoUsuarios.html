@@ -1,0 +1,21 @@
+<div class="container">
+
+		<div class="CajaInicio animated bounceInRight">
+			<h1>Listado de Usarios</h1>
+		</div>
+
+	                   <div class="row" style="border:solid">
+  <div class="col-md-2" ><h4>NOMBRE<h4></div>
+  <div class="col-md-2" ><h4>CORREO</h4></div>
+  <div class="col-md-2" ><h4>PERFIL</h4></div>
+  <div class="col-md-2" ><h4>FOTO</h4></div>
+  <div class="col-md-2" ><h4>MODIFICAR</h4></div>
+ <div class="col-md-2"  ><h4>BORRAR</h4></div>
+
+  </div>
+                       	<div  ng-repeat="usuario in Listadeusuarios">
+                  <mostrar-usuarios usuarios="usuario" borrarusuario="borrarusuario" modificarusuario="modificarusuario" borraruser="Borrar(id)"   modificar="Modificar(id)"></mostrar-usuarios>
+                                    </div>
+							
+	
+</div>

@@ -1,0 +1,41 @@
+  
+<div class="CajaInicio animated bounceInRight"  style="align:center;width:80%">
+   <div ng-hide="if" style="background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 15%, rgba(240,240,240,1) 82%, rgba(237,237,237,1) 100%);align:center;width:50%;height:10%;padding:13px;box-shadow: 3px 3px #474747">
+       <button class="btn btn-primary" ng-click="altaProd()">ALTA DE PRODUCTO</button>
+     </div>
+   <div>
+  	  <h2 style="color:black">PRODUCTOS</h2>
+     </div>
+                 <div class="row" style="border:solid">
+  <div class="col-md-2" ><h4>NOMBRE<h4></div>
+  <div class="col-md-2" ><h4>DESCRIPCION</h4></div>
+  <div class="col-md-2" ><h4>PRECIO</h4></div>
+  <div class="col-md-2" ng-hide="if" ><h4>CODIGO</h4></div>
+  <div class="col-md-2" ><h4>FOTO</h4></div>
+ <div class="col-md-2" ng-hide="if"><h4>ACCION</h4></div>
+
+
+
+
+  </div>
+                
+								<div  ng-repeat="producto in productos">
+                  <mostrar-productos productos="producto" borrarprod="borrarprod" mostrarcodigo="mostrarcodigo" borrar="Borrar(id)"></mostrar-productos>
+                </div>
+
+                    </div>									<!--tr ng-if="resultado.length==0">
+
+										<td></td>
+							
+										<td>No hay personas con ese criterio</td>
+										<td></td>
+										<td></td>
+
+										<td></td>
+										
+										<td></td>
+									 						
+									</tr-->
+	         
+
+

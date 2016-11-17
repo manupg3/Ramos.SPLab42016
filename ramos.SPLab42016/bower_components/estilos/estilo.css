@@ -1,0 +1,717 @@
+//estilos para las validaciones
+
+input.ng-invalid {
+    background-color:red;
+}
+input.ng-valid {
+    background-color:white;
+}
+
+.registro-fondo{
+
+  background-color:#8387F1;
+
+}
+
+
+/*
+
+
+
+CSS Classes
+AngularJS adds CSS classes to forms and input fields depending on their states.
+
+The following classes are added to, or removed from, input fields:
+
+ng-untouched The field has not been touched yet
+ng-touched The field has been touched
+ng-pristine The field has not been  modified yet
+ng-dirty The field has been modified
+ng-valid The field content is valid
+ng-invalid The field content is not valid
+ng-valid-key One key for each validation. Example: ng-valid-required, useful when there are more than one thing that must be validated
+ng-invalid-key Example: ng-invalid-required
+The following classes are added to, or removed from, forms:
+
+ng-pristine No fields has not been modified yet
+ng-dirty One or more fields has been modified
+ng-valid The form content is valid
+ng-invalid The form content is not valid
+ng-valid-key One key for each validation. Example: ng-valid-required, useful when there are more than one thing that must be validated
+ng-invalid-key Example: ng-invalid-required
+The classes are removed if the value they represent is false.
+
+
+*/
+
+input[type="text"],input[type="email"]  {
+
+
+
+  display: block;
+  color:black;
+height: 3em;
+width: 100%;
+}
+
+label{
+
+ color: black;
+}
+.nav-tabs {
+    border-bottom: 1px solid #151313 !important;
+        background-color: rgba(0, 0, 0, 0.33);
+            padding: 5px;
+}
+li.btn {
+    height: 49px;
+
+}
+
+* {
+  margin:0;
+  padding:0;
+  border-radius: 10px;
+}
+.table-responsive{
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(252,252,252,1) 15%,
+   rgba(240,240,240,1) 82%, rgba(237,237,237,1) 100%);
+  box-shadow:3px 3px #474747;
+}
+
+.table-hover>tbody>tr:hover {
+      background-color: #8387F1;
+      
+       border-radius: 0px ;
+}
+.table-hover>tbody>tr>td {
+       px #000000;
+       border-radius: 0px ;
+}
+ .btn{
+      box-shadow: 1px 2px 5px #000000;   
+  }
+#tituloBarra{
+
+  float: right;
+}
+.fotoGrilla {
+  width: 50px;
+  height: 50px;
+  border-radius:50%; 
+}
+.fotoform {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.container {
+   margin-top: 12px;
+   width:auto;
+   padding-top:5px;
+   background-image:url(fotos/pizeria.jpg) no-repeat center center;
+  
+   background-size: cover;
+}
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 10px;
+    z-index: 1;
+}
+#headerRL {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 10px;
+    z-index: 2;
+}
+
+
+        .carousel-control.left
+      {
+        background: none;
+      }
+      .carousel-control.right
+      {
+        background: none;
+      }
+
+      .carousel-control
+      {
+        position: absolute;
+        top: 45%;
+        bottom: 0;
+        left: 0;
+        width: 15%;
+        font-size: auto;
+        color: #fff;
+        text-align: center;
+        opacity: 1;
+        text-shadow: none;
+      }
+      .carousel-control:hover
+      {
+        color: #000;
+      }
+      .carousel-indicators
+      {
+        bottom: -50px;
+      }
+      .imgslide{
+         width: 100%;
+      }
+      .carousel-indicators li
+      {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000\9;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid #16a085;
+        border-radius: 50%;
+      }
+      .carousel-indicators .active
+      {
+        width: 12px;
+        height: 12px;
+        margin: 0;
+        background-color: #16a085;
+      }
+      .carousel-caption
+      {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+        background: rgba(0,0,0,0.4);
+      }
+body {
+  margin: 0 auto;
+  /**color:#f0f0f0;*/
+      color: #333;
+  /**background:#3f51b5; */
+  background: #ebebeb;
+  font-family:'Open Sans',sans-serif;
+}
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.btn-primary{
+  width: auto;
+
+}
+.gp{
+  font-family:"Times New cRoman",Arial;
+
+}
+
+.CajaUno {
+
+  max-width: 30%;
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+*{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  font-family:arial;
+}
+body{background:url("http://www.galaxiastudio.com/wp-content/uploads/2014/03/2252.jpg")#FF9000}
+h1{
+  color:#AAA173;
+  text-align:center;
+  font-faimly:icon;
+}
+
+.login-form{
+  width:350px;
+  padding:40px 30px;
+  background:rgba(235,235,205,0.7);
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  margin:50px auto;
+}
+.form-group{
+  position: relative;
+  margin-bottom:15px;
+}
+.form-control{
+  width:100%;
+  height:50px;
+  border:none;
+  padding:5px 7px 5px 15px;
+  background:#fff;
+  color:#666;
+  border:2px solid #E0D68F;
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+}
+.form-control:focus, .form-control:focus + .fa{
+  border-color:#10CE88;
+  color:#10CE88;
+}
+.form-group .fa{
+  position: absolute;
+  right:15px;
+  top:17px;
+  color:#999;
+}
+.log-status.wrong-entry {
+  -webkit-animation: wrong-log 0.3s;
+  -moz-animation: wrong-log 0.3s;
+  -ms-animation: wrong-log 0.3s;
+  animation: wrong-log 0.3s;
+}
+.log-status.wrong-entry .form-control, .wrong-entry .form-control + .fa {
+  border-color: #ed1c24;
+  color: #ed1c24;
+}
+@keyframes wrong-log {
+  0% { left: 0px;}
+  20% {left: 15px;}
+  40% {left: -15px;}
+  60% {left: 15px;}
+  80% {left: -15px;}
+  100% {left: 0px;}
+}
+@-ms-keyframes wrong-log {
+  0% { left: 0px;}
+  20% {left: 15px;}
+  40% {left: -15px;}
+  60% {left: 15px;}
+  80% {left: -15px;}
+  100% {left: 0px;}
+}
+@-moz-keyframes wrong-log {
+  0% { left: 0px;}
+  20% {left: 15px;}
+  40% {left: -15px;}
+  60% {left: 15px;}
+  80% {left: -15px;}
+  100% {left: 0px;}
+}
+@-webkit-keyframes wrong-log {
+  0% { left: 0px;}
+  20% {left: 15px;}
+  40% {left: -15px;}
+  60% {left: 15px;}
+  80% {left: -15px;}
+  100% {left: 0px;}
+}
+.log-btn{
+  background:#0AC986;
+  dispaly:inline-block;
+  width:100%;
+  font-size:16px;
+  height:50px;
+  color:#fff;
+  text-decoration:none;
+  border:none;
+  border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+}
+
+.link{
+  text-decoration:none;
+  color:#9D8E79;
+  display:block;
+  text-align:right;
+  font-size:12px;
+  margin-bottom:15px;
+}
+.link:hover{
+  text-decoration:underline;
+  color:#8C918F;
+}
+.alert{
+  display:none;
+  font-size:12px;
+  color:#f00;
+  float:left;
+}
+
+
+.body{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width:auto;
+  height: auto;
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQosoris2FsEEbyvohqGp7kO6gxbiwRbUIMS74hfRGJMITIM1mlFQ);
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.grad{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+  z-index: 1;
+  opacity: 0.7;
+}
+.header{
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 255px);
+  z-index: 2;
+}
+
+.header div{
+  float: left;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.header div span{
+  color: #5379fa !important;
+}
+.login{
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.login input[type=email]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[type=password]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login input[type=button]{
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+  opacity: 0.8;
+}
+
+.login input[type=button]:active{
+  opacity: 0.6;
+}
+
+.login input[type=email]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+.CajaInicio {
+  width:750px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+.CajaEnunciado {
+  max-width: 30%;
+  border: dashed;
+ position: fixed;
+background: royalblue;
+top: 0px;
+width: 400px;
+margin: 0;
+padding: 10px;
+
+margin-bottom: 2%;
+transition: opacity 1s;
+-webkit-transition: opacity 1s;
+border-radius: 15px;
+-webkit-border-radius: 15px;
+}
+
+.CajaInicio h1{
+  background:rgb(14, 26, 112);; 
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+.CajaAbajo {
+   margin-top: 100px;
+  width:400px;
+  top:0px;
+left:0px;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+.CajaArriva {
+  margin-top: 20px;
+  width:400px;
+  top:0px;
+  left:0px;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+#FormIngreso {
+
+  background:#f0f0f0;
+  padding:6% 4%;
+}
+
+input[type="text"],input[type="file"],,input[type="file"]{
+  width:92%;
+  background:#fff;
+  margin-bottom:2%;
+  border:1px solid #ccc;
+  padding:2%;
+  font-family:'Open Sans',sans-serif;
+  font-size:140%;
+  font-weight: 800;
+  color:#555;
+}
+select{
+  width:100%;
+  background:#fff;
+  margin-bottom:2%;
+  border:1px solid #ccc;
+  padding:2%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+}
+
+.MiBotonUTN {
+  display:block;
+  text-transform: capitalize;
+  border:hidden;
+  width:100%;
+  background:#f50056;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.MiBotonUTN:hover{
+  background:#1BA045;
+}
+/*
+.MiBotonUTNJuego {
+  
+  text-transform: capitalize;
+  border:hidden;
+  width:32%;
+  background:#f50056;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+*/
+.MiBotonUTNMenu {
+  display:block;
+  text-transform: capitalize;
+  border:hidden;
+  width:100px;
+  background:#f50056;
+  margin-top:1%;
+  padding:6px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.MiBotonUTNMenu:hover{
+ background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(45deg, #1e5799 0%, #2989d8 16%, #2989d8 16%, #ffffff 36%, #ffffff 43%, #ebf709 48%, #ffffff 52%, #ffffff 61%, #207cca 82%, #207cca 99%, #207cca 99%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(16%,#2989d8), color-stop(16%,#2989d8), color-stop(36%,#ffffff), color-stop(43%,#ffffff), color-stop(48%,#ebf709), color-stop(52%,#ffffff), color-stop(61%,#ffffff), color-stop(82%,#207cca), color-stop(99%,#207cca), color-stop(99%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color:black;
+}
+/*
+.MiBotonUTNLinea{
+  max-width: 150px;
+position: absolute;
+  text-transform: capitalize;
+  border:hidden;
+  width:100%;
+  background:#00A1F5;
+  margin:0 auto;
+  margin-top:30%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+.MiBotonUTNLinea:hover{
+  background:red;
+
+}
+*/
+.MiBotonUTNMenuInicio {
+  display:block;
+ 
+  border:hidden;
+  //width:150px;
+  background:Blue;
+  margin-top:1%;
+  padding:6px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+.MiBotonUTNMenuInicio:hover{
+  background:red;
+}
+
+
+
+/*
+.CajaUno h1{
+  background:#f50056; 
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+
+.CajaUno a:hover {
+  color:#f50056;
+}
+*/
+
+/*
+.CajaUno a {
+  color:#DDDDDD;
+}
+*/
+/*
+.PiedraPapelTijera
+{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+
+}*/

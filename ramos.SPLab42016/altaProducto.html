@@ -1,0 +1,66 @@
+ <div>
+      <h2 style="text-decoration:underline">ALTA DE PRODUCTOS</h2>
+  </div>
+<div class="container" style="border-bottom:solid;border-top:solid">
+ 
+  <form align="center"  enctype="multipart/form-data" name="productosForm">
+    <div class="form-group row" >
+      <label for="inputEmail3" class="col-sm-2 col-form-label" style="text-decoration:underline"><h4>Nombre</h4></label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" ng-model="producto.nombre" placeholder="Nombre del Producto" style="width:79%" require>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3"  style="text-decoration:underline" class="col-sm-2 col-form-label"><h4>Descripcion</h4></label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" ng-model="producto.descripcion"  placeholder="Descripcion" style="width:79%" required>
+      </div>
+    </div>
+   
+    <div class="form-group row">
+      <label class="col-sm-2"  style="text-decoration:underline"><h4>Precio</h4></label>
+       <div class="col-sm-10">
+        <input type="text" class="form-control" ng-model="producto.precio"  placeholder="Precio" style="width:79%" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2"  style="text-decoration:underline"><h4>Codigo</h4></label>
+       <div class="col-sm-10">
+        <input type="number" min="1" max="5000" class="form-control" name="codigo" ng-model="producto.codigo" ng-maxlength="5"  placeholder="Codigo/maximo 5 caracteres/" style="width:79%" required>
+        <span  ng-show="productosForm.codigo.$error.min">DEBE SER MAYOR A 1.</span>
+        <span ng-show="productosForm.codigo.$error.max">DEBE SER MENOR A 5000.</span>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label class="col-sm-2"  style="text-decoration:underline"><h4>Fotos del local</h4></label>
+        <div nv-file-drop="" uploader="uploader" align="center">
+		        <div style="width:64%" nv-file-over="" uploader="uploader" over-class="another-file-over-class" class="well my-drop-zone">
+		            Arrastre la imagen
+		        </div>
+		    </div>
+    </div>
+     <div class="form-group">
+                    
+                                     <ul>
+    <!-- Muestro los datos de los archivos a cargar -->
+          <li ng-repeat="item in uploader.queue">
+            <!-- nombre del archivo -->
+              Archivo: <span ng-bind="item.file.name"></span><br/>
+              <!-- imagen del archivo -->
+              <div ng-show="uploader.isHTML5" ng-thumb="{ file: item._file, height: 100 }"></div>
+              <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                  <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+              </button>
+              <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                  <span class="glyphicon glyphicon-trash"></span> Remove
+              </button>
+          </li>   
+      </ul>
+          </div>
+    <div class="form-group row" align="center" style="width:100%;padding-left:211px" >
+      <div class="offset-sm-2 col-sm-10">
+        <button type="submit" class="btn btn-primary" ng-disabled="!productosForm.$valid" ng-click="guardarProducto()" style="width:98%">Guardar Producto</button>
+      </div>
+    </div>
+  </form>
+</div>

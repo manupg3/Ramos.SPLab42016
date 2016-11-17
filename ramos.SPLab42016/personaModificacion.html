@@ -1,0 +1,32 @@
+<div class="container">
+		<div class="CajaInicio animated bounceInRight">
+			<h1> MODIFICACION </h1>
+
+			<form id="FormMod" enctype="multipart/form-data" >
+
+				<input type="text" id="nombre" ng-model="usuario.nombre"  value="" required />
+				<span id="lblNombre" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">
+				</span>
+
+				<input type="text" id="correo" ng-model="usuario.correo"  value="" required /> 
+				<span id="lblCorreo" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">
+				 </span>
+
+				<input type="text" id="pass" ng-model="usuario.password"  value="" required /> 
+				<span id="lblPass" style="display:none;color:#FF0000;width:1%;float:right;font-size:80"></span>
+			
+				<input type="text"  name="perfil" ng-model="usuario.perfil"  value="" required/> 
+				
+				<span id="lblPerfil" style="display:none;color:#FF0000;width:1%;float:right;font-size:80"></span>
+			
+				<button class="btn btn-info " name="guardar" ng-click="Guardar()" >
+					<span class="glyphicon glyphicon-save">&nbsp;</span>Guardar</button>
+                  
+				<input type="hidden" value="" id="hdnAgregar" name="agregar" />
+				</div>
+
+			</form>
+		
+
+		</div>
+</div>

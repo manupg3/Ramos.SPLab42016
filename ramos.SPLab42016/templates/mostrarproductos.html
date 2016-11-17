@@ -1,0 +1,13 @@
+
+  <div class="row" style="border:solid">
+  <div class="col-md-2" ><h4>{{misProductos.nombre}}<h4></div>
+  <div class="col-md-2" ><h4>{{misProductos.descripcion}}</h4></div>
+  <div class="col-md-2" ><h4>{{misProductos.precio}}</h4></div>
+  <div class="col-md-2" ng-if="mostrarcodigo"  ><h4 >{{misProductos.codigo}}</h4></div>
+  <div class="col-md-2" > <img  class='fotoGrilla' ng-src="fotos/{{misProductos.foto}}" /></div>
+   
+   <div class="col-md-2"  style="padding-top:7px" ><a ng-if="borrarprod" class='btn btn-danger' name='Borrar' ng-click="clickborrar({id: misProductos.id})"> 
+										  <span class='glyphicon glyphicon-remove-circle'>&nbsp;</span>Borrar</a></div>
+ 
+
+  </div>

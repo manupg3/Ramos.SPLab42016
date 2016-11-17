@@ -1,0 +1,14 @@
+
+  <div class="row" style="border:solid">
+  <div class="col-md-2" ><h4>{{misUsuarios.nombre}}<h4></div>
+  <div class="col-md-2" ><h4>{{misUsuarios.correo}}</h4></div>
+  <div class="col-md-2" ><h4>{{misUsuarios.perfil | perfil}}</h4></div>
+  <div class="col-md-2" > <img  class='fotoGrilla' ng-src="fotos/{{misUsuarios.foto}}" /></div>
+ 
+  <div class="col-md-2"  style="padding-top:7px" ><a  class='btn btn-warning' name='modificar' ng-click="clickmodificar({id: misUsuarios.id})"> 
+										  <span class='glyphicon glyphicon-pencil'>&nbsp;</span>MODIFICAR</a></div>  
+   <div class="col-md-2"  style="padding-top:7px" ><a  class='btn btn-danger' name='borrar' ng-click="clickborraruser({id: misUsuarios.id})"> 
+										  <span class='glyphicon glyphicon-remove-circle'>&nbsp;</span>BORRAR</a></div>
+ 
+
+  </div>
